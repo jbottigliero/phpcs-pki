@@ -11,10 +11,16 @@
  <description>Punchkick Interactive's Coding Standard</description>
 
  <!--
+    This file can be edited easily by identifying problematic
+    sniffs with something like this (which -s reveals sniff Ids):
+      phpcs -s foobar.php
+ -->
+
+ <!--
     You can hard-code ignore patterns directly into your
     custom standard so you don't have to specify the
     patterns on the command line.
-    
+
     The following two tags are equivalent to the command line
  -->
  <exclude-pattern>*/tests/*</exclude-pattern>
@@ -53,7 +59,7 @@
 
  <!--
     Include all sniffs from the Generic standard except a few that
-    are specifically excluded. Note again that the name of the sniff 
+    are specifically excluded. Note again that the name of the sniff
     is the code that PHP_CodeSniffer gives it.
  -->
  <rule ref="Generic">
@@ -73,7 +79,7 @@
 
  <!--
     Include all sniffs from the PEAR standard except a few that
-    are specifically excluded. Note again that the name of the sniff 
+    are specifically excluded. Note again that the name of the sniff
     is the code that PHP_CodeSniffer gives it.
  -->
  <rule ref="PEAR">
@@ -85,6 +91,7 @@
   <exclude name="PEAR.ControlStructures.MultiLineCondition"/>
   <exclude name="PEAR.Formatting.MultiLineAssignment"/>
   <exclude name="PEAR.Functions.FunctionCallSignature"/>
+  <exclude name="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
   <exclude name="PEAR.WhiteSpace.ObjectOperatorIndent"/>
   <exclude name="PEAR.WhiteSpace.ScopeIndent"/>
  </rule>
@@ -97,13 +104,9 @@
     -s command line argument when checking a file.
  <rule ref="Squiz">
   <exclude name="Squiz.PHP.CommentedOutCode"/>
- </rule>	
- <rule ref="Squiz.PHP.DisallowInlineIf"/>
- -->
- <rule ref="Squiz.Classes.ValidClassName"/>
- <rule ref="Squiz.Functions.GlobalFunction">
-  <severity>0</severity>
  </rule>
+ -->
+ <rule ref="Squiz.PHP.DisallowInlineIf"/>
 
  <!--
     Here we are including a specific sniff but also changing

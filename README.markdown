@@ -10,3 +10,20 @@ Installation
 * Install [PHP_CodeSniffer](http://pear.php.net/PHP_CodeSniffer) with `pear install PHP_CodeSniffer` (PHP_CodeSniffer 1.3 or later is required).
 * Checkout this repository as `PKI` into the `PHP/CodeSniffer/Standards` directory.
 * Use the coding standard with `phpcs --standard=PKI`.
+
+e.g.
+
+drwxr-xr-x  13 root  wheel   442B Oct 31 00:13 ./
+drwxr-xr-x  15 root  wheel   510B Jul 26 20:45 ../
+-rw-r--r--   1 root  wheel    33K Jul 26 20:45 AbstractPatternSniff.php
+-rw-r--r--   1 root  wheel   7.7K Jul 26 20:45 AbstractScopeSniff.php
+-rw-r--r--   1 root  wheel   7.4K Jul 26 20:45 AbstractVariableSniff.php
+drwxr-xr-x   5 root  wheel   170B Jul 26 20:45 Generic/
+-rw-r--r--   1 root  wheel   1.1K Jul 26 20:45 IncorrectPatternException.php
+drwxr-xr-x   4 root  wheel   136B Jul 26 20:45 MySource/
+drwxr-xr-x   5 root  wheel   170B Jul 26 20:45 PEAR/
+drwxr-xr-x   3 root  wheel   102B Jul 26 20:45 PHPCS/
+lrwxr-xr-x   1 root  wheel    56B Oct 31 00:13 PKI@ -> /Applications/MAMP/vh/docroots/git_Punchkick - phpcs-pki
+drwxr-xr-x   5 root  wheel   170B Jul 26 20:45 Squiz/
+drwxr-xr-x   4 root  wheel   136B Jul 26 20:45 Zend/
+ryanunger@Ryan-Ungers-MacBook-Pro{/usr/local/share/pear/PHP/CodeSniffer/Standards}:
