@@ -5,14 +5,27 @@ This is the set of sniffs that should be used with [PHP_CodeSniffer](http://pear
 
 
 Installation
-------------
+-----------------------------------------------------------
 
 * Install [PHP_CodeSniffer](http://pear.php.net/PHP_CodeSniffer) with `pear install PHP_CodeSniffer` (PHP_CodeSniffer 1.3 or later is required).
 * Checkout this repository as `PKI` into the `PHP/CodeSniffer/Standards` directory.
 * Use the coding standard with `phpcs --standard=PKI`.
 
-e.g.
 
+phpMD / PHP CodeSniffer Netbeans Plugin
+-----------------------------------------------------------
+Netbeans PHP Plugin which provides violations detected by - PHP Mess Detector 
+(phpmd.org by Manuel Pichler) and - warnings / infos from PHP CodeSniffer 
+(http://pear.php.net/package/PHP_CodeSniffer/) 
+Website: https://sourceforge.net/projects/phpmdnb/
+Plugin Files: http://sourceforge.net/projects/phpmdnb/files/nbm/
+
+
+
+Example of How the PKI Sniff Can be Configured
+-----------------------------------------------------------
+
+$bash:  ls -la
 drwxr-xr-x  13 root  wheel   442B Oct 31 00:13 ./
 drwxr-xr-x  15 root  wheel   510B Jul 26 20:45 ../
 -rw-r--r--   1 root  wheel    33K Jul 26 20:45 AbstractPatternSniff.php
@@ -26,4 +39,34 @@ drwxr-xr-x   3 root  wheel   102B Jul 26 20:45 PHPCS/
 lrwxr-xr-x   1 root  wheel    56B Oct 31 00:13 PKI@ -> /Applications/MAMP/vh/docroots/git_Punchkick - phpcs-pki
 drwxr-xr-x   5 root  wheel   170B Jul 26 20:45 Squiz/
 drwxr-xr-x   4 root  wheel   136B Jul 26 20:45 Zend/
-ryanunger@Ryan-Ungers-MacBook-Pro{/usr/local/share/pear/PHP/CodeSniffer/Standards}:
+$bash: 
+
+
+
+PHPCS Config Settings for Local Development
+-----------------------------------------------------------
+
+$bash: phpcs --config-show
+Array
+(
+)
+$bash: sudo phpcs --config-set tab-width 2
+$bash: sudo phpcs --config-set error-severity 1
+$bash: sudo phpcs --config-set warning-severity 8
+$bash: sudo phpcs --config-set report_width 120
+$bash: sudo phpcs --config-set standard PKI
+$bash: sudo phpcs --config-set encoding utf-8
+$bash: sudo phpcs --config-set extensions php
+$bash: phpcs --config-show
+Array
+(
+    [tab-width] => 2
+    [error-severity] => 1
+    [warning-severity] => 8
+    [report_width] => 120
+    [standard] => PKI
+    [encoding] => utf-8
+    [extensions] => php
+)
+$bash: 
+

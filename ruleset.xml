@@ -63,18 +63,18 @@
     is the code that PHP_CodeSniffer gives it.
  -->
  <rule ref="Generic">
-  <exclude name="Generic.Commenting.Todo"/>
-  <exclude name="Generic.ControlStructures.InlineControlStructure"/>
-  <exclude name="Generic.Debug.ClosureLinter"/>
-  <exclude name="Generic.Files.LineLength"/>
-  <exclude name="Generic.Formatting.NoSpaceAfterCast"/>
-  <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
-  <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
-  <exclude name="Generic.PHP.UpperCaseConstant"/>
-  <exclude name="Generic.Strings.UnnecessaryStringConcat"/>
-  <exclude name="Generic.VersionControl.SubversionProperties"/>
-  <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
-  <exclude name="Generic.WhiteSpace.ScopeIndent"/>
+ <exclude name="Generic.Commenting.Todo"/>
+ <exclude name="Generic.ControlStructures.InlineControlStructure"/>
+ <exclude name="Generic.Debug.ClosureLinter"/>
+ <exclude name="Generic.Files.LineLength"/>
+ <exclude name="Generic.Formatting.NoSpaceAfterCast"/>
+ <exclude name="Generic.Formatting.MultipleStatementAlignment"/>
+ <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+ <exclude name="Generic.PHP.UpperCaseConstant"/>
+ <exclude name="Generic.Strings.UnnecessaryStringConcat"/>
+ <exclude name="Generic.VersionControl.SubversionProperties"/>
+ <exclude name="Generic.WhiteSpace.DisallowTabIndent"/>
+ <exclude name="Generic.WhiteSpace.ScopeIndent"/>
  </rule>
 
  <!--
@@ -83,17 +83,18 @@
     is the code that PHP_CodeSniffer gives it.
  -->
  <rule ref="PEAR">
-  <exclude name="PEAR.Commenting.ClassComment"/>
-  <exclude name="PEAR.Commenting.FileComment"/>
-  <exclude name="PEAR.Commenting.FunctionComment"/>
-  <exclude name="PEAR.Commenting.InlineComment"/>
-  <exclude name="PEAR.ControlStructures.ControlSignature"/>
-  <exclude name="PEAR.ControlStructures.MultiLineCondition"/>
-  <exclude name="PEAR.Formatting.MultiLineAssignment"/>
-  <exclude name="PEAR.Functions.FunctionCallSignature"/>
-  <exclude name="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
-  <exclude name="PEAR.WhiteSpace.ObjectOperatorIndent"/>
-  <exclude name="PEAR.WhiteSpace.ScopeIndent"/>
+ <exclude name="PEAR.Commenting.ClassComment"/>
+ <exclude name="PEAR.Commenting.FileComment"/>
+ <exclude name="PEAR.Commenting.FunctionComment"/>
+ <exclude name="PEAR.Commenting.InlineComment"/>
+ <exclude name="PEAR.ControlStructures.ControlSignature"/>
+ <exclude name="PEAR.ControlStructures.MultiLineCondition"/>
+ <exclude name="PEAR.Formatting.MultiLineAssignment"/>
+ <exclude name="PEAR.Functions.FunctionCallSignature"/>
+ <exclude name="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
+ <exclude name="PEAR.WhiteSpace.ObjectOperatorIndent"/>
+ <exclude name="PEAR.WhiteSpace.ScopeClosingBrace.BreakIdent"/>
+ <exclude name="PEAR.WhiteSpace.ScopeIndent"/>
  </rule>
 
  <!--
