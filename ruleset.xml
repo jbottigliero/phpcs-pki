@@ -91,6 +91,8 @@
  <exclude name="PEAR.ControlStructures.MultiLineCondition"/>
  <exclude name="PEAR.Formatting.MultiLineAssignment"/>
  <exclude name="PEAR.Functions.FunctionCallSignature"/>
+ <exclude name="PEAR.Functions.FunctionDeclaration.Indent"/>
+ <exclude name="PEAR.Functions.FunctionDeclaration.NewlineBeforeOpenBrace"/>
  <exclude name="PEAR.NamingConventions.ValidVariableName.PublicUnderscore"/>
  <exclude name="PEAR.WhiteSpace.ObjectOperatorIndent"/>
  <exclude name="PEAR.WhiteSpace.ScopeClosingBrace.BreakIdent"/>

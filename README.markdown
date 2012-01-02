@@ -14,9 +14,9 @@ Installation
 
 phpMD / PHP CodeSniffer Netbeans Plugin
 -----------------------------------------------------------
-Netbeans PHP Plugin which provides violations detected by - PHP Mess Detector 
-(phpmd.org by Manuel Pichler) and - warnings / infos from PHP CodeSniffer 
-(http://pear.php.net/package/PHP_CodeSniffer/) 
+Netbeans PHP Plugin which provides violations detected by - PHP Mess Detector
+(phpmd.org by Manuel Pichler) and - warnings / infos from PHP CodeSniffer
+(http://pear.php.net/package/PHP_CodeSniffer/)
 Website: https://sourceforge.net/projects/phpmdnb/
 Plugin Files: http://sourceforge.net/projects/phpmdnb/files/nbm/
 
@@ -39,7 +39,7 @@ drwxr-xr-x   3 root  wheel   102B Jul 26 20:45 PHPCS/
 lrwxr-xr-x   1 root  wheel    56B Oct 31 00:13 PKI@ -> /Applications/MAMP/vh/docroots/git_Punchkick - phpcs-pki
 drwxr-xr-x   5 root  wheel   170B Jul 26 20:45 Squiz/
 drwxr-xr-x   4 root  wheel   136B Jul 26 20:45 Zend/
-$bash: 
+$bash:
 
 
 
@@ -68,5 +68,25 @@ Array
     [encoding] => utf-8
     [extensions] => php
 )
-$bash: 
+$bash:
 
+
+
+
+HOW TO DETECT ROUGUE SNIFFS THAT DON'T CONFORM TO OUR STANDARDS
+---------------------------------------------------------------
+> Step 1:
+$bash: phpcs --standard=PKI -s AclResourceHelper.php
+
+FILE: ...croots/[...]/AclResourceHelper.php
+------------------------------------------------------------------------------------------------------------------------
+FOUND 2 ERROR(S) AFFECTING 1 LINE(S)
+------------------------------------------------------------------------------------------------------------------------
+ 33 | ERROR | Multi-line function declaration not indented correctly; expected 2 spaces but found 48
+    |       | (PEAR.Functions.FunctionDeclaration.Indent)
+ 33 | ERROR | There must be a single space between the closing parenthesis and the opening brace of a multi-line
+    |       | function declaration; found newline (PEAR.Functions.FunctionDeclaration.NewlineBeforeOpenBrace)
+------------------------------------------------------------------------------------------------------------------------
+
+> Step 2:
+Add exclude lines into ruleset.xml. e.g. <exclude name="PEAR.Functions.FunctionDeclaration.NewlineBeforeOpenBrace"/>
