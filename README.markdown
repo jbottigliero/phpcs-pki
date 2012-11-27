@@ -12,15 +12,44 @@ Installation
 * Use the coding standard with `phpcs --standard=PKI`.
 
 
-phpMD / PHP CodeSniffer Netbeans Plugin
+## Editor Plugins
+
+###Netbeans
 -----------------------------------------------------------
 
 Netbeans PHP Plugin which provides violations detected by - PHP Mess Detector
 (phpmd.org by Manuel Pichler) and - warnings / infos from PHP CodeSniffer
 (http://pear.php.net/package/PHP_CodeSniffer/)
+
 Website: https://sourceforge.net/projects/phpmdnb/
+
 Plugin Files: http://sourceforge.net/projects/phpmdnb/files/nbm/
 
+###Sublime Text 2
+
+-----------------------------------------------------------
+Once phpcs is installed a Sublime Text 2 package can be installed via [Package Control](http://wbond.net/sublime_packages/package_control/installation)
+
+Website: http://soulbroken.co.uk/code/sublimephpcs
+
+Plugin Files: https://github.com/benmatselby/sublime-phpcs
+
+
+Once installed you'll need to update your user configuration to the PKI rule set.
+
+`Preferences -> Package Settings -> PHP Code Sniffer -> Settings - User`
+
+Add the following:
+
+```
+{
+    "phpcs_additional_args": {
+        "--standard": "/Path/To/Ruleset/PKI/phpcs-pki/ruleset.xml",
+        "-n" : ""
+    }
+
+}
+```
 
 
 Example of How the PKI Sniff Can be Configured
