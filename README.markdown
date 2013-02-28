@@ -1,3 +1,17 @@
+----
+
+## NOTE:
+
+Punchkick has adopted php-fig's PSR-2 as the coding standard at this time.
+For more information on PSR-2, and what it entails checkout [PSR-2 Accepted](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)
+Since the PSR-2 standard is shipped with the latest version(s) of PHP_Codesniffer, using this ruleset is optional* 
+
+*In the sense that you can run against the standard directly
+
+----
+
+
+
 Punchkick Interactive's Coding Standard for PHP_CodeSniffer
 ===========================================================
 
@@ -45,6 +59,7 @@ Add the following:
 {
     "phpcs_additional_args": {
         "--standard": "/Path/To/Ruleset/PKI/phpcs-pki/ruleset.xml",
+        // or "--standard": "PSR-2"
         "-n" : ""
     }
 
